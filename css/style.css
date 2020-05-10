@@ -401,3 +401,56 @@ body{
     line-height: 2;
     letter-spacing: 1px;
 }
+.gllery-area{
+    background: var(--primary-bg);
+}
+.gllery-area .swiper-about_gallery .swiper-slide{
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+/*--------------
+    BIOGRAPHIE DU FONDATEUR
+--------------*/
+.biographie-area {
+    background: #F7F7F7;
+}
+.biographie-area .block-pg{
+    line-height: 1.9;
+    font-size: 18px;
+}
+.block-ul-parent,
+.block-ul-child{
+    list-style: none;
+    padding-left: 0;
+    position: relative;
+}
+.block-ul-parent li::before{
+    content: '-';
+    margin-right: 5px;
+}
+.block-ul-child{
+    padding-left: 60px;
+}
+.block-ul-child li::before{
+    content: '+';
+    margin-right: 5px;
+}
+ul[class*="block-ul"].style-dot li::before{
+    content: '•';
+    margin-right: 5px;
+}
+ul[class*="block-ul"].no-style li::before{
+    content: '';
+}
+
+.biographie-area .fondateur-img{
+    max-width: 350px;
+    margin-left: 90px;
+    margin-bottom: 100px;
+}
+.read-more[aria-expanded="true"],
+.read-less[aria-expanded="false"]{
+    display: none;
+}

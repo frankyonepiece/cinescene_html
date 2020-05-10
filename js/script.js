@@ -1,6 +1,6 @@
 
+"use strict"
 let app = {
-
     sliders: function () {
         if($('.swiper-mainBanner').length){
             var mainSlider = new Swiper('.swiper-mainBanner', {
@@ -89,8 +89,31 @@ let app = {
                 },
             });
         }
-    },
 
+        if ($('.swiper-about_gallery').length) {
+            var mainSlider = new Swiper('.swiper-about_gallery', {
+                speed: 1000,
+                slidesPerView: 5,
+                autoplay: true,
+                loop:true,
+                breakpoints: {
+                    1000:{
+                        slidesPerView: 5,
+                    },
+                    900: {
+                        slidesPerView: 3,
+                    },
+                    600: {
+                        slidesPerView: 1,
+                    },
+                    360: {
+                        slidesPerView: 1
+                    }
+                }
+            });
+        }
+        
+    },
     img_parallax:function () {
         if ($('.img-parallax').length) {
             $('.img-parallax').parallax();
@@ -104,10 +127,39 @@ let app = {
             });
         }
     },
-
+    goTOsection:function(){
+        $.scrollIt({
+            topOffset: -77
+        });
+    },
+    gellery: function () {
+        if ($('.app-gallery').length) {
+            
+            $('.app-gallery').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                closeOnContentClick: false,
+                closeBtnInside: false,
+                mainClass: 'mfp-with-zoom mfp-img-mobile',
+                image: {
+                    verticalFit: true,
+                    titleSrc: function(item) {
+                        return item.el.attr('title');
+                        // return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
+                    }
+                },
+                gallery: {
+                    enabled: true
+                }      
+            });
+        }
+    },
     init: function () {
         this.sliders();
         this.serviceHover();
+        this.goTOsection();
+        this.gellery();
+        
     }
 }
 
