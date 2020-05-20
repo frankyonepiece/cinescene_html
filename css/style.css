@@ -170,6 +170,10 @@ body{
 /*--------------
     ABOUT
 --------------*/
+.movie-banner-area{
+    margin-top: -230px;
+    margin-bottom: 30px;
+}
 .movie-slider .swiper-slide {
     background-position: center;
     background-size: cover;
@@ -453,4 +457,45 @@ ul[class*="block-ul"].no-style li::before{
 .read-more[aria-expanded="true"],
 .read-less[aria-expanded="false"]{
     display: none;
+}
+
+/*--------------
+    MOVIE-FILTERS-AREA
+--------------*/
+.movie-filters-area{
+    background: #F7F7F7;
+    box-shadow: 0 0 22px 0px #2121212b;
+}
+
+.movie-filters-area .filter-nav{
+    padding: 0;
+}
+.movie-filters-area .filter-nav .filter-item{
+    padding-top: 35px;
+    padding-bottom: 35px;
+    width: 100%;
+    position: relative;
+    font-family: var(--primary-font-bold);
+    color: var(--primary-bg);
+    font-size: 18px;
+    min-width: 100px;
+}
+
+.movie-filters-area .filter-nav .filter-item::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    height: 3px;
+    background: var(--primary-color);
+    opacity: 0;
+    transform: translateX(-55%);
+    transition: all ease 0.4s;
+}
+
+.movie-filters-area .filter-nav .filter-item:hover::after,
+.movie-filters-area .filter-nav .filter-item.active::after{
+    opacity: 1;
+    transform: translateX(-50%);
 }

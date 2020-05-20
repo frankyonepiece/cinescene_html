@@ -154,11 +154,50 @@ let app = {
             });
         }
     },
+    filter: function(){
+        if ($('.filter-item').length) {
+
+            // onload hash
+            if (window.location.hash) {
+                let _hash = window.location.hash.replace('#','').toString();
+                let e_filter = $(`.filter-item[data-filter="${_hash}"]`);
+                if (e_filter.length){
+                    setTimeout(() => {
+                        e_filter.click();
+                    }, 20);
+                }
+            }
+            
+            $('.filter-item').on('click', function (e) {
+                e.preventDefault();
+                
+                // select element
+                $('.filter-item').removeClass('active');
+                $(this).addClass('active');
+
+                let filter = $(this).data('filter');
+                if (filter == 'all') {
+                    $('.filter-block').fadeIn();
+                    return true;
+                }
+                $('.filter-block').each( function (key, elem) {
+                    if (!$(elem).hasClass(filter)) {
+                        if ($(elem).css('display') != 'none') {
+                            $(elem).fadeOut();
+                        }
+                    }else{
+                        $(elem).fadeIn();
+                    }
+                })
+            })
+        }
+    },
     init: function () {
         this.sliders();
         this.serviceHover();
         this.goTOsection();
         this.gellery();
+        this.filter();
         
     }
 }
