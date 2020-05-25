@@ -16,49 +16,7 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-md navbar-dark main-navbar py-3 fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img class="img-fluid csi-logo" width="70px" src="img/logo.png" alt="Cinescene" title="Cinescene">
-            </a>
-            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">ACCUEIL</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="dropdownId" data-toggle="dropdown" aria-expanded="false">À APROPOS</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" data-scroll-nav="0" href="#">Qui Sommes Nous</a>
-                            <a class="dropdown-item" data-scroll-nav="1" href="#">Presentation CSI</a>
-                            <a class="dropdown-item" data-scroll-nav="2" href="#">Mot du Directeur</a>
-                            <a class="dropdown-item" data-scroll-nav="3" href="#">Notre Equipe</a>
-                            <a class="dropdown-item" data-scroll-nav="4" href="#">Références</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Nos Productions</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Multimedia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">SHOOT IN MOROCO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <?php include('./extands/navbar.php'); ?>
     
     <header class="banner-main-inpage img-parallax" data-parallax="scroll" data-image-src="./img/banner/bg.png">
         <div class="container">
@@ -211,7 +169,7 @@
     <!-- END YOUTUBE -->
 
     <!-- CLIENTS -->
-    <section data-scroll-index="4" class="clients-area app-section-wrapper">
+    <section  class="clients-area app-section-wrapper">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 mb-3 mb-md-0">
@@ -275,7 +233,6 @@
     <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js'></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-    <script type="text/javascript" src="./js/scrollIt.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     
 </body>

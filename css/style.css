@@ -67,6 +67,49 @@ body{
     font-size: 14px;
 }
 
+.shadow-top{
+    box-shadow: 0 -.5rem 1rem rgba(0,0,0,.15) !important;
+}
+
+/*----------------------
+    Fy Dropdown
+*/
+.dropdown-toggle::after {
+    margin-left: 11px;
+}
+.fy-dropdown .fy-dropdown-menu{
+    transform: translateY(16px);
+    min-width: 210px;
+    border-radius: 0;
+}
+.fy-dropdown .fy-dropdown-menu .dropdown-item:active,
+.fy-dropdown .fy-dropdown-menu .dropdown-item:hover,
+.fy-dropdown .fy-dropdown-menu .dropdown-item:focus{
+    background: #303030;
+    color: white;
+}
+
+.fy-dropdown .fy-dropdown-menu::after{
+    --drop-arrow: 8px;
+    content: '';
+    position: absolute;
+    top: calc( -1 * var(--drop-arrow));
+    left: 30px;
+    margin-left: -16px;
+    display: inline-block;
+    border-right: var(--drop-arrow) solid transparent;
+    border-bottom: var(--drop-arrow) solid white;
+    border-left: var(--drop-arrow) solid transparent;
+}
+
+.fy-dropdown.show .fy-dropdown-menu{
+    animation: ease dropmenu 0.4s forwards;
+}
+@keyframes dropmenu{
+    from{ opacity: 0; margin-top: -10px; }
+    to{ opacity: 1; margin-top: 0px; }
+}
+
 .container{
     max-width: 1220px;
 }
@@ -91,6 +134,12 @@ body{
     text-transform: uppercase;
     font-family: var(--title-font);
     font-size: 60px;
+}
+.banner-main-inpage .banner-pg{
+    margin-top: 35px;
+    font-size: 20px;
+    line-height: 1.7;
+    color: white;
 }
 
 .presentation-area{

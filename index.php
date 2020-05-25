@@ -16,52 +16,10 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-md navbar-dark main-navbar py-3 fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img class="img-fluid csi-logo" width="70px" src="img/logo.png" alt="Cinescene" title="Cinescene">
-            </a>
-            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">ACCUEIL</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="dropdownId" data-toggle="dropdown" aria-expanded="false">À APROPOS</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="about.html">Qui Sommes Nous</a>
-                            <a class="dropdown-item" href="about.html">Presentation CSI</a>
-                            <a class="dropdown-item" href="about.html">Mot du Directeur</a>
-                            <a class="dropdown-item" href="about.html">Notre Equipe</a>
-                            <a class="dropdown-item" href="about.html">Références</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Nos Productions</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Multimedia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">SHOOT IN MOROCO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <?php include('./extands/navbar.php'); ?>
     
 
-    <section class="main-banner" data-scroll-index="0">
+    <section class="main-banner" >
         <div class="swiper-container swiper-mainBanner">
             <div class="swiper-wrapper">
                 <div class="swiper-slide" style="background-image: url(img/banner/bg.png);">
@@ -360,7 +318,6 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.8/js/swiper.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js"></script>
-    <script src="./js/scrollIt.js"></script>
     <script src="js/script.js"></script>
     
 </body>
