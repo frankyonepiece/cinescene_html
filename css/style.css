@@ -70,6 +70,10 @@ body{
 .shadow-top{
     box-shadow: 0 -.5rem 1rem rgba(0,0,0,.15) !important;
 }
+.block-pg{
+    line-height: 1.9;
+    font-size: 18px;
+}
 
 /*----------------------
     Fy Dropdown
@@ -125,7 +129,7 @@ body{
     width: 100%;
 }
 .banner-main-inpage{
-    height: 540px;
+    min-height: 540px;
     padding-top: 180px;
     box-shadow: 0 2px 20px 6px #ccc;
 }
@@ -137,6 +141,7 @@ body{
 }
 .banner-main-inpage .banner-pg{
     margin-top: 35px;
+    margin-bottom: 35px;
     font-size: 20px;
     line-height: 1.7;
     color: white;
@@ -547,4 +552,134 @@ ul[class*="block-ul"].no-style li::before{
 .movie-filters-area .filter-nav .filter-item.active::after{
     opacity: 1;
     transform: translateX(-50%);
+}
+
+/*-----------------------------
+        SERVICES PAGE
+        .prodAllInclu-area,
+        .prodExecu-area,
+        .prostProd-area,
+        .captImg-area,
+        .locatMater-area{
+            
+    }
+-----------------------------*/
+[class*="section-mt-ouvrage"] .block-content{
+    padding: 70px;
+}
+.prodAllInclu-area .block-content,
+.prostProd-area .block-content,
+.locatMater-area .block-content{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.prodExecu-area{
+    color: white;
+}
+
+.section-mt-ouvrageDe.captImg-area .block-content{
+    background-color: var(--primary-bg);
+}
+.section-ingerop-about .imgeblock,
+.section-mt-ouvrage .imgeblock,
+.section-mt-ouvrage-oe .imgeblock {
+    z-index: 10;
+    position: relative
+}
+
+.section-mt-ouvrage .imgeblock,
+.section-mt-ouvrage-oe .imgeblock {
+    height: calc(100% + 3rem)
+}
+
+.section-mt-ouvrage .imgeblock.betweenBlock,
+.section-mt-ouvrage-oe .imgeblock.betweenBlock {
+    height: calc(100% + 6rem)
+}
+
+.section-mt-ouvrage-oe .imgeblock {
+    margin-top: -3rem
+}
+
+.section-mt-ouvrageDe .block-content {
+    background-color: var(--primary-color)
+}
+.section-mt-ouvrageDe.section-groupe-activ .block-content {
+    background-color: var(--primary-color)
+}
+
+.section-mt-ouvrageDe .block-content .block-test {
+    font-size: 21px;
+    line-height: 32px
+}
+.section-mt-ouvrageDe .block-content .block-wrapper {
+    max-width: 80%
+}
+
+.section-mt-ouvrage-oe .block-content>p {
+    margin-bottom: 30px
+}
+
+.section-mt-ouvrage-oe .block-content .accordion-title {
+    margin-bottom: 18px
+}
+
+.out-left,
+.out-right {
+    position: absolute
+}
+.out-left {
+    padding: 0;
+    left: 0
+}
+.out-right {
+    padding: 0;
+    right: 0
+}
+.imgeblock {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+}
+
+.section-mt-ouvrageDe.captImg-area .block-content{
+    padding-bottom: calc( 50px + 3rem);
+}
+.captImg-area .out-left{
+    height: calc( 100% - 3rem);
+}
+.prodExecu-area .app-section-title,
+.captImg-area .app-section-title{
+    color: white;
+    font-size: 1.9em;
+    margin-bottom: 30px;
+}
+
+@media (max-width:767.98px) {
+    [class*="section-mt-ouvrage"] .block-content{
+        padding: 70px 15px;
+    }
+    .out-left,
+    .out-right {
+        position: static;
+        width: 100%
+    }
+
+    .section-mt-ouvrage .imgeblock,
+    .section-mt-ouvrage-oe .imgeblock {
+        min-height: 300px;
+        position: static
+    }
+
+    .section-mt-ouvrageDe .block-content .block-wrapper {
+        max-width: 100%
+    }
+
+    .block-title {
+        font-size: 29px
+    }
+
+    .section-groupe-activ .block-content {
+        padding: 82px 30px
+    }
 }

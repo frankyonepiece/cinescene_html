@@ -96,38 +96,9 @@
         </div>
     </section>
     <!-- END GLLERY -->
+
+    <?php include('./extands/equipe.php'); ?>
     
-
-    <!-- EQUIPE -->
-    <section class="team-area app-section-wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 class="app-section-title">Notre équipe</h2>
-                </div>
-                <div class="col-md-12 team-area-content mb-3">
-                    <p>Ciné-Scène International, compte parmi ses collaborateurs des cinéastes confirmés avec une expérience longue et diversifiée dans tous les domaines de la production audiovisuelles, cinématographique et évènementielle. Elle a contribué depuis sa création en 1990 et durant toute sa carrière, à la formation de techniciens pour les métiers du spectacles (Réalisateurs, Chef Operateur, Ingénieurs de Son, Directeurs de Productions, Cadreurs, Monteurs, Electriciens, Machinistes, Décorateurs, Régisseurs, Costumières, Maquilleuses, Scriptes, Accessoiristes etc), ils sont tous sollicités pour participer sur les tournages de grandes envergures et les grandes productions étrangères dans le Royaume du Maroc.
-                        <a class="text-reset" href="javascript:void()"><strong>lire plus</strong></a> </p>
-                </div>
-                <div class="col-md-12 px-5 px-md-2">
-                    <div class="swiper-container swiper-team">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide"> <div class="team-mumber rounded-circle" style="background-image: url(img/equipe/mumber-1.png);"></div> </div>
-                            <div class="swiper-slide"> <div class="team-mumber rounded-circle" style="background-image: url(img/equipe/mumber-2.png);"></div> </div>
-                            <div class="swiper-slide"> <div class="team-mumber rounded-circle" style="background-image: url(img/equipe/mumber-3.png);"></div> </div>
-                            <div class="swiper-slide"> <div class="team-mumber rounded-circle" style="background-image: url(img/equipe/mumber-4.png);"></div> </div>
-                            <div class="swiper-slide"> <div class="team-mumber rounded-circle" style="background-image: url(img/equipe/mumber-5.png);"></div> </div>
-                        </div>
-                    </div>
-                    <!-- Add Arrows -->
-                    <div class="team-nav swiper-button-next"></div>
-                    <div class="team-nav swiper-button-prev"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- END EQUIPE -->
-
 
     <!-- SERVICES D'ACOMPAGNEMENT -->
     <section id="servicesacompagnementId" class="motdirectrue-area app-section-wrapper">
@@ -150,80 +121,10 @@
     </section>
     <!-- END SERVICES D'ACOMPAGNEMENT -->
 
-    <!-- YOUTUBE -->
-    <section class="youtube-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 youtube-block">
-                    <h2>Suivez-nous sur <br> youtube</h2>
-                </div>
-                <div class="col-md-6 px-0 y-img-block d-lg-none">
-                    <a href="https://m.youtube.com/channel/UCqcYWcGNANm4t0sAP8PRczw" target="_blanck">
-                        <img src="./img/youtube-mobile.png" class="img-fluid y-img" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- END YOUTUBE -->
-
-    <!-- CLIENTS -->
-    <section  class="clients-area app-section-wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 mb-3 mb-md-0">
-                    <h2 class="app-section-title mb-4 mb-md-0">ILS NOUS FONT CONFIANCE</h2>
-                </div>
-                <div class="col-md-12 px-5 px-md-2">
-                    <div class="swiper-container swiper-clients">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide"> <div class="client-mumber rounded-circle"> <img class="img-fluid" src="./img/clients/2m.png" alt=""> </div> </div>
-                            <div class="swiper-slide"> <div class="client-mumber rounded-circle"> <img class="img-fluid" src="./img/clients/interface.png" alt=""> </div> </div>
-                            <div class="swiper-slide"> <div class="client-mumber rounded-circle"> <img class="img-fluid" src="./img/clients/renault.png" alt=""> </div> </div>
-                            <div class="swiper-slide"> <div class="client-mumber rounded-circle"> <img class="img-fluid" src="./img/clients/smsa.png" alt=""> </div> </div>
-                            <div class="swiper-slide"> <div class="client-mumber rounded-circle"> <img class="img-fluid" src="./img/clients/snrt.png" alt=""> </div> </div>
-                        </div>
-                    </div>
-                    <!-- Add Arrows -->
-                    <div class="clients-nav swiper-button-next"></div>
-                    <div class="clients-nav swiper-button-prev"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- END SERVICES -->
-
-    <!-- FOOTER -->
-    <footer class="footer-area py-4">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-4 pl-md-5 text-white offset-md-1">
-                    <div class="d-flex w-100 align-items-md-end align-items-center  mb-5">
-                        <img src="img/logo.png" width="150px" class="mr-2" alt="">
-                        <h3 class="foot-logo-text">Ciné-Scène International</h3>
-                    </div>
-                    <div class="foot-body mb-5">
-                        <i class="fa fa-map-marker-alt mr-2" aria-hidden="true"></i> CINE SCENE INTERNATIONAL 39, Rue Lalla Yacout <br>
-                            Quartier Liberté B.P. : 20080 - Casablanca - Maroc <br>
-                        <i class="fas fa-phone-alt mr-2"></i> +212 (0) 522 300 060 <i class="fa fa-envelope ml-2 mr-2" aria-hidden="true"></i> contact@cinescene.ma <br>
-                        <a class="text-reset mr-2" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="text-reset mr-2" href=""><i class="fab fa-linkedin-in"></i></a>
-                        <a class="text-reset mr-2" href=""><i class="fab fa-youtube"></i></a>
-                        Suivez nous sur les réseaux sociaux <br>
-                        N'hésitez pas à nous contacter
-                        <a class="foot-contect" href="">ici</a>
-                    </div>
-                    <div class="foot-copyright mt-md-4 text-center">
-                        <p class="m-md-0">Copyright CSI <i class="far fa-copyright"></i> 2020</p>
-                    </div>
-                </div>
-                <div class="col-md map-block pr-md-5">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13294.287592673989!2d-7.6124932!3d33.5904629!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8e21ce9ce5276bce!2sCin%C3%A9-Sc%C3%A8ne%20International!5e0!3m2!1sfr!2sma!4v1588526557984!5m2!1sfr!2sma" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- END FOOTER -->
+    
+    <?php include('./extands/youtube.php'); ?>
+    <?php include('./extands/clients.php'); ?>
+    <?php include('./extands/footer.php'); ?>
 
     <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
     <script type="text/javascript" src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
